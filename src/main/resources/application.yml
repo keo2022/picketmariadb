@@ -1,0 +1,33 @@
+spring:
+  profiles:
+    active: jwt
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/picket?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: picket
+    password: picket
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      format_sql: true
+      hibernate:
+        show_sql: true
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 797661503883-i0c3508b56cchat7selr369l9q85dfgf.apps.googleusercontent.com
+            client-secret: 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
+            scope:
+              - profile
+              - email
+
+logging:
+  level:
+    org.springframework: Info
+    com.swyg.picketbackend : debug
