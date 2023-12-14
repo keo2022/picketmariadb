@@ -31,3 +31,4 @@ logging:
   level:
     org.springframework: Info
     com.swyg.picketbackend : debug
+    org.springframework.security: debug
