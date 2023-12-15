@@ -7,7 +7,7 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     properties:
       format_sql: true
       hibernate:
@@ -35,8 +35,9 @@ logging:
 springdoc:
   show-login-endpoint: true
 
-
-
+server:
+  forward-headers-strategy: framework
 
 jwt:
   secret: c3ByaW5nLWJvb3Qtc2VjdXJpdHktand0LXR1dG9yaWFsLWppd29vbi1zcHJpbmctYm9vdC1zZWN1cml0eS1qd3QtdHV0b3JpYWwK
+
