@@ -23,13 +23,17 @@ spring:
             scope:
               - profile
               - email
+  config:
+    activate:
+      on-profile: jwt
+
+
 
 logging:
   level:
     org.springframework: Info
     com.swyg.picketbackend : debug
     org.springframework.security: debug
-
 
 
 springdoc:
