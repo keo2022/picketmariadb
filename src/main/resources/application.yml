@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/picket?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    url: jdbc:mysql://localhost:3306/prac?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
     username: picket
     password: picket
 
@@ -54,4 +54,14 @@ server:
 
 jwt:
   secret: c3ByaW5nLWJvb3Qtc2VjdXJpdHktand0LXR1dG9yaWFsLWppd29vbi1zcHJpbmctYm9vdC1zZWN1cml0eS1qd3QtdHV0b3JpYWwK
+
+cloud:
+  aws:
+    s3:
+      bucket: swyg-picket
+    stack.auto: false
+    region.static: ap-northeast-2
+    credentials:
+      accessKey: AKIA3RTEIKP5KM3EBN42
+      secretKey: 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
 
