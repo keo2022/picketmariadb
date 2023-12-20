@@ -27,7 +27,17 @@ spring:
     activate:
       on-profile: jwt
 
-
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: "jiwoong423"
+    password: "bvehowlutsppsdsi"
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
 
 logging:
   level:
